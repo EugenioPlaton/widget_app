@@ -17,7 +17,11 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme(selectedColor: 0).getTheme(),
       home: const HomeScreen(),
+      routes: {
+        '/buttons': (context) => const ButtonsScreen(),
+        '/cards': (context) => const CardScreen(),
 
+      },
 
     );
   }

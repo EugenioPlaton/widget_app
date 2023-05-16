@@ -56,12 +56,12 @@ class _CustomListTitle extends StatelessWidget {
       subtitle: Text(menuItem.subTitle),
       onTap: () {
         //ONE WAY 4 NAVIGATE SCREENS FLUTTER
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => const CardScreen(),
-          ),
-        );
-       // Navigator.push(context, );
+        //Navigator.of(context).push(
+        //  MaterialPageRoute(
+        //    builder: (context) => const CardScreen(),
+        //  ),
+        //);
+        Navigator.pushNamed(  context, menuItem.link );
 
       },
     );
